@@ -7,7 +7,7 @@ fun main() {
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
-
+     val hero = Hero()
 
 
     /**
@@ -17,6 +17,7 @@ fun main() {
      *
      */
 
+    hero.setProfile("Mallvino", 12, 170)
 
 
     /**
@@ -24,7 +25,7 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
+    hero.profile()
 
 
     /**
@@ -42,7 +43,20 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
-
+    repeat(5){
+        hero.jalan()
+    }
+    repeat(2){
+        hero.lari()
+    }
+    repeat(3){
+        hero.makan()
+    }
+    hero.minum()
+    repeat(3){
+        hero.lompat()
+    }
+    hero.duduk()
 
 
 
@@ -51,6 +65,6 @@ fun main() {
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
+    hero.profile()
 
 }
